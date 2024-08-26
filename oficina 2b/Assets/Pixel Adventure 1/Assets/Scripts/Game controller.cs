@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Gamecontroller : MonoBehaviour
 {
 
     public int totalScore;
-    public Text scoretext;
+    public TMP_Text scoretext;
 
     public static Gamecontroller instance;
 
