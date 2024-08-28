@@ -7021,8 +7021,8 @@ Transform:
   m_GameObject: {fileID: 583344271}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: -10.58, z: -0.08158948}
-  m_LocalScale: {x: 266.06967, y: 3.7898676, z: 3.7898676}
+  m_LocalPosition: {x: 5.55, y: -12.69, z: -0.08158948}
+  m_LocalScale: {x: 343.6822, y: 4.895372, z: 4.895372}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9813,7 +9813,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1079033714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1728430148}
+        m_TargetAssemblyTypeName: Gamecontroller, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: fase2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1079033714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10699,6 +10711,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674015150}
   m_CullTransparentMesh: 1
+--- !u!114 &1728430148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 707410447084948569, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
+  m_PrefabInstance: {fileID: 2907565577530903641}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639f658771d79aa418d0d44a920fc893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1783138784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12455,9 +12478,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 707410447084948569, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1236928300}
+    - target: {fileID: 707410447084948569, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
       propertyPath: scoretext
       value: 
-      objectReference: {fileID: 1674015152}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708167403176680552, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2475
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708167403176680552, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2475
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708167403176680552, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2475
+      objectReference: {fileID: 0}
     - target: {fileID: 3708167403176680552, guid: 40fea784ec2081d46a73b9bc32423422, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.677126
