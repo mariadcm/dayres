@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Gamecontroller : MonoBehaviour
 {
 
     public int totalScore;
-    public TMP_Text scoretext;
-
+    public Text scoretext;
+   public GameObject gameOver;
+    
     public static Gamecontroller instance;
 
-    // Start is called before the first frame update
+  // Start is called before the first frame update
     void Start()
     {
        instance = this;
@@ -22,10 +23,18 @@ public class Gamecontroller : MonoBehaviour
  {
       scoretext.text = totalScore.ToString();
      }
+     public void ShowGameOver()
+{
+   gameOver.SetActive(true);
 }
 
 
 
+ public void RestartGame(string lvlName)
+ {
+     SceneManager.LoadScene("lvlName");
+ }
+}
     
 
     
