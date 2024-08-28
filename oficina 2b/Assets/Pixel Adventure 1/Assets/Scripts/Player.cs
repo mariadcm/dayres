@@ -81,15 +81,19 @@ public class NewBehaviourScript : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
         }
+    
+    if(collision.gameObject.tag == "spike")
+        {
+          Debug.Log("Tocou o espinho!");
+        }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
+     void onCollisionEnter2D(Collision2D collision)
+     {
         if(collision.gameObject.layer == 8)
         {
             isJumping = true;
         }
     }
-
-
 }
+
