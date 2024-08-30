@@ -155,5 +155,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09957f5b83336ff4082535d27432cd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collected: {fileID: 0}
+  collected: {fileID: 1395024798653878840, guid: 67aaa4b60fcbef643b5dba1002061fca, type: 3}
   Score: 10

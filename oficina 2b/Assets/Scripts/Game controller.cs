@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Gamecontroller : MonoBehaviour
 {
 
     public int totalScore;
-    public Text scoretext;
+    public TextMeshProUGUI scoretext;
    public GameObject gameOver;
     
     public static Gamecontroller instance;
@@ -22,7 +23,7 @@ public class Gamecontroller : MonoBehaviour
   public void UpdateScoreText()
  {
       scoretext.text = totalScore.ToString();
-     }
+ }
      public void ShowGameOver()
 {
    gameOver.SetActive(true);
@@ -32,7 +33,7 @@ public class Gamecontroller : MonoBehaviour
 
  public void RestartGame(string lvlName)
  {
-     SceneManager.LoadScene("lvlName");
+     SceneManager.LoadScene(lvlName);
  }
 }
     
